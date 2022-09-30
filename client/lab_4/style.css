@@ -1,3 +1,29 @@
+html {
+  background-color:rgb(255, 180, 180);
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  /* these are specific to different browsers */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 2px;
+  padding: 0;
+
+  font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color:rgb(255, 180, 180);
+}
+
 /*
 Form Styles
 */
@@ -45,15 +71,34 @@ form input {
   
   
 }
+.inner-box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  border-style: solid;
+  border-color: #521515;
+  padding: 50px;
+  padding-top: 20px;
+  background-color: #521515;
+  
+
+
+}
 
 .outer-box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-style: dashed;
-  border-color: #b30303;
+  border-style:solid;
+  border-color: #521515;
   padding: 50px;
   padding-top: 20px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  margin: 1rem;
+  background-color: #912929;
+  color: white;
+  border-radius: 5px;
 
 
 }
@@ -63,18 +108,20 @@ form input {
   flex-direction: column;
   align-items: left; 
   justify-content: center;
-  border-style: dashed;
-  border-color: #0ce157;
+  border-style:double;
+  border-color: #521515;
   padding: 50px;
   padding-top: 20px;
+  border-radius: 5px;
+  background-color: #521515;
+  color: white;
+  border-radius: 5px;
   
 
 
 }
 
-.no-border {
-  border-color: white;
-}
+
 }
 
 
@@ -101,15 +148,17 @@ form input {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
-  color: #4a4a4a;
+  background-color: #b42727;
+  color: #ffffff;
   width: 100%;
+  height: 80px;
+  border-radius: 5px;
 
   /* shapes */
   
 
   /* box-shadows are fancy */
-  /*box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);*/
+  box-shadow: 0 .5em .5em -0.125em rgb(10 10 10 / 30%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 .big-bold {
@@ -122,15 +171,29 @@ form input {
 .footer {
   position:absolute;
    bottom:0;
-   width:99%;
+   width:100%;
    height:60px;
 }
 
 .footer-item {
   border: 1px solid #fff;
-  background-color: #D6E9FE;
+  background-color: #a80101;
   height: 80px;
   flex: 1;
+  color: white;
+  box-shadow: 0 .5em .5em -0.125em rgb(10 10 10 / 30%), 1px 0 0 1px rgb(10 10 10 / 2%);
+  border-radius: 5px;
+}
+.footer a {
+  color: yellow;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #FFCEC2;
 }
 
 
@@ -153,10 +216,15 @@ form input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-style: dashed;
-  border-color: #b30303;
+  border-style:solid;
+  border-color: #521515;
   padding: 50px;
   padding-top: 20px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  margin: 1rem;
+  background-color: #912929;
+  color: white;
+  border-radius: 5px;
 
 
 }
@@ -166,10 +234,13 @@ form input {
   flex-direction: column;
   align-items: left; 
   justify-content: center;
-  border-style: dashed;
-  border-color: #0ce157;
+  border-style:double;
+  border-color: #521515;
   padding: 50px;
   padding-top: 20px;
+  border-radius: 5px;
+  background-color: #521515;
+  color: white
   
 
 
@@ -180,10 +251,12 @@ form input {
   flex-direction: row;
   align-items: center; 
   justify-content: center;
-  border-style: dashed;
-  border-color: #0ce157;
+  border-style: solid;
+  border-color: #521515;
   padding: 50px;
   padding-top: 20px;
+  border-radius: 5px;
+  background-color: #521515;
   
 
 
@@ -195,14 +268,13 @@ align-items: center;
 }
 
 .box-2 {
-background-color: #5995DA;
+background-color: #912929;
+color: white;
+border-radius: 5px;
 display: flex;
 align-items: center; 
 width: 1000px;
 height: 150px;
 }
 
-.no-border {
-  border-color: white;
-}
 }
