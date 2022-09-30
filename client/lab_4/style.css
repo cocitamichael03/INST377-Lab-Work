@@ -81,6 +81,7 @@ form input {
   padding: 50px;
   padding-top: 20px;
   background-color: #521515;
+  border-radius: 5px;
   
 
 
@@ -178,11 +179,12 @@ form input {
 .footer-item {
   border: 1px solid #fff;
   background-color: #a80101;
-  height: 80px;
+  height: 70px;
   flex: 1;
   color: white;
   box-shadow: 0 .5em .5em -0.125em rgb(10 10 10 / 30%), 1px 0 0 1px rgb(10 10 10 / 2%);
   border-radius: 5px;
+  font-size: 24px;
 }
 .footer a {
   color: yellow;
