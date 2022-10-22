@@ -281,16 +281,17 @@
   }
   
   .box-2 {
+  display: flex;
   background-color: #912929;
   color: white;
   border-radius: 5px;
   display: flex;
   align-items: center; 
   width: 1000px;
-  height: 150px;
+  height: auto;
   }
   
-  }
+
 
 
 
