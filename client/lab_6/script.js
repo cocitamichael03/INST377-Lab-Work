@@ -65,6 +65,8 @@ async function mainEvent() {
   const submit = document.querySelector('#get-resto'); // button[type="submit"] get a reference to your submit button
   submit.style.display = 'none'; // let your submit button disappear
 
+
+
   /*
     Let's get some data from the API - it will take a second or two to load
     This next line goes to the request for 'GET' in the file at /server/routes/foodServiceRoutes.js
@@ -91,6 +93,10 @@ async function mainEvent() {
   // This IF statement ensures we can't do anything if we don't have information yet
   if (arrayFromJson.data?.length > 0) { // the question mark in this means "if this is set at all"
     submit.style.display = 'block'; // let's turn the submit button back on by setting it to display as a block when we have data available
+
+
+    loadAnimation.classList.remove('lds-ellipsis');
+    loadAnimation.classList.add('lds-ellipsis_hidden');
 
     // And here's an eventListener! It's listening for a "submit" button specifically being clicked
     // this is a synchronous event event, because we already did our async request above, and waited for it to resolve
