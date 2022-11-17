@@ -1,0 +1,395 @@
+/* 
+    New code bonus: pure CSS data loading icon
+    This comes from loading.io/css - it's nice to show that something is happening!
+*/
+
+
+
+
+
+
+
+html {
+    background-color:rgb(255, 180, 180);
+    font-size: 16px;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  
+    /* these are specific to different browsers */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  body {
+    margin: 2px;
+    padding: 0;
+  
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:rgb(255, 180, 180);
+  }
+  
+  /*
+  Form Styles
+  */
+  
+  form input {
+      /* This is a hack to make sure our boxes line up with one another nicely */
+      width: 100%;
+      width: -moz-available;          /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+      width: fill-available;
+  
+      /* here we are setting white space correctly */
+      margin-bottom: 1rem;
+      height: 2rem;
+      border-radius: 4px;
+    }
+  
+    form label {
+      width: 100%;
+      width: -moz-available;          /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+      width: fill-available;
+      align-items: flex-start;
+  
+      display: block; /* this turns the label text into a box we can set margins on */
+      margin-bottom: 0.5rem;
+    }
+  
+  /* How To Write A Media Query For Small Screens */
+  
+  @media only screen and (max-width: 736px){
+      /* Rules in here will only apply when a screen is the correct size */
+      /* check it out by using your developer tools to shrink your screen-size */
+      .container {
+        background-color: rgba(204, 8, 162, 0.65);
+      }
+      
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    padding-top: 10px;
+   
+    
+    
+  }
+  .inner-box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    border-style: solid;
+    border-color: #521515;
+    padding: 50px;
+    padding-top: 20px;
+    background-color: #521515;
+    border-radius: 5px;
+    
+  
+  
+  }
+  
+  .outer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-style:solid;
+    border-color: #521515;
+    padding: 50px;
+    padding-top: 20px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    margin: 1rem;
+    background-color: #912929;
+    color: white;
+    border-radius: 5px;
+  
+  
+  }
+  
+  
+  
+  .inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: center;
+    border-style:double;
+    border-color: #521515;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: #521515;
+    color: white;
+    border-radius: 5px;
+    
+  
+  
+  }
+  
+  
+  }
+  
+  
+  
+  
+  
+  .wrapper {
+    /*min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;*/
+  }
+  
+  /*HEADER------------------------------*/
+  .header {
+    /*padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;*/
+    width: 100%;
+  }
+  
+  .header h1 {
+    display: block;
+    /* this will push other blocks out of the way */
+  
+    /* colors */
+    background-color: #b42727;
+    color: #ffffff;
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+  
+    /* shapes */
+    
+  
+    /* box-shadows are fancy */
+    box-shadow: 0 .5em .5em -0.125em rgb(10 10 10 / 30%), 0 0 0 1px rgb(10 10 10 / 2%);
+  }
+  
+  .big-bold {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  
+  
+  .footer {
+    
+    /*display: inline-flex;
+  flex-shrink: 0;
+    
+     bottom:0;
+     width:100%;*/
+     clear: both;
+    position: relative;
+    height: 0px;
+    margin-top: 130px;
+     
+     
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #a80101;
+    height: 70px;
+    flex: 1;
+    color: white;
+    box-shadow: 0 .5em .5em -0.125em rgb(10 10 10 / 30%), 1px 0 0 1px rgb(10 10 10 / 2%);
+    border-radius: 5px;
+    font-size: 24px;
+    
+  }
+  .footer a {
+    color: yellow;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #FFCEC2;
+  }
+  
+  
+  
+  @media only screen and (min-width: 737px){
+  
+  
+  .main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    padding-top: 10px;
+   
+    
+    
+  }
+  
+  .outer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-style:solid;
+    border-color: #521515;
+    padding: 50px;
+    padding-top: 20px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    margin: 1rem;
+    background-color: #912929;
+    color: white;
+    border-radius: 5px;
+  
+  
+  }
+
+  .column--shrunk {
+    /* prevents vertical stretching */  
+    align-self: start;  
+  }
+  
+  
+  .inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: center;
+    border-style:double;
+    border-color: #521515;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: #521515;
+    color: white
+    
+  
+  
+  }
+  
+  .inner-box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    border-style: solid;
+    border-color: #521515;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: #521515;
+    
+  
+  
+  }
+  
+  .box2inner {
+    display: flex;
+  align-items: center; 
+  }
+  
+  .box-2 {
+  display: flex;
+  background-color: #912929;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  width: 1000px;
+  height: auto;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-ellipsis_hidden {
+    display: hidden;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    } 
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
+
+  
