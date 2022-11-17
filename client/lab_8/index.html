@@ -1,0 +1,64 @@
+<!--
+    This is how to build the CSS-only load animation from loading.io    
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+
+    This is helpful for showing your client-side users when data is loading,
+    since there's otherwise no sign your app is thinking about something!
+
+    Try placing it at the same level in your element tree as your Submit button
+-->
+
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Lab 7</title>
+   <link rel='stylesheet' href='./style.css'/>
+  </head>
+  <body>
+    
+    <header class="header"><h1>Michael's Labs For INST377</h1></header>
+    <div class="main-box">
+        <div class="outer-box column--shrunk">
+            <div class="">
+                <p class="big-bold">Form Inputs</p>
+            </div>
+            <div class='inner-box'>
+                <div class='form input form label'>Filter Restaurant List</div>
+                <form action="/api" class="box main_form">
+                    <div>
+                        <label for="resto"></label>
+                        <input type="text" name="resto" id="resto"/>
+                    </div>
+                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    <button type="submit" id="get-resto">Change Restaurants</button>
+                </form>
+            </div>
+        </div>
+
+        <!--<div class="outer-box no-border"></div>-->
+        
+        <div class='outer-box box-2'>
+            <div>
+                <p class="big-bold">Local Restaurants</p>
+            </div>
+            <div class='inner-box2'>
+                <div class=''id="restaurant_list">A list of Restaurants from an api.</div>
+            
+            </div>
+        </div>
+
+
+    </div>
+
+    <div  class="footer">
+        <div class="footer-item">cocitamichael03 - Github here: <a href='https://github.com/cocitamichael03/INST377-Lab-Work'>github</a>.
+        </div>
+    </div>
+
+ 
+
+    <script src="script.js"></script>
+  </body>
+</html>
