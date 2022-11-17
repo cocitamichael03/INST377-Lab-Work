@@ -38,6 +38,14 @@ html {
   /*
   Form Styles
   */
+
+  #map { 
+    display: block;
+    width: 400px;
+    height: 380px;
+    border: 2px dashed;
+    margin-bottom: 1rem;
+ }
   
   form input {
       /* This is a hack to make sure our boxes line up with one another nicely */
